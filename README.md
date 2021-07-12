@@ -1,6 +1,6 @@
 ## Решение домашнего задания к лекции «[Import. Module. Package](https://github.com/netology-code/py-homeworks-advanced/tree/master/1.Import.Module.Package)»
   1. "При вызове функций модуля [main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/imports/main.py) выводить текущую дату" - вывожу дату и время в выбранном формате
-  1. 4 пункт не совсем понял, но в [dirty_main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/imports/dirty_main.py) попробовал сделать импорт с помощью конструкции from packages import * и файл [\__init__.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/imports/application/__init__.py)
+  1. 4 пункт не совсем понял, но в [dirty_main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/imports/dirty_main.py) попробовал сделать импорт с помощью конструкции from packages import * и файл [\_\_init__.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/imports/application/__init__.py)
   1. Чтобы загрузить пустую директорию на GitHub, создал в ней временный пустой файл
 
 ## Домашнее задание к лекции «[Regular expressions](https://github.com/netology-code/py-homeworks-advanced/tree/master/5.Regexp)»
