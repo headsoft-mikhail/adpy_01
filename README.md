@@ -11,4 +11,6 @@
   5. Файл с кодом: "[regular_expressions.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/reg_exp/regular_expressions.py)" 
   
 ## Решение [домашнего задания](https://github.com/netology-code/py-homeworks-advanced/tree/master/2.Iterators.Generators.Yield) к лекции «Iterators. Generators. Yield»
-  1.
+  1. Файлы, относящиеся к заданию по итераторам и генераторам [здесь](https://github.com/headsoft-mikhail/adpy_01/tree/main/iterators_generators)
+  1. Класс итератора реализован в файле [iterator.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/iterator.py). При создании экземпляра можно указать (а можно не указывать) начальный и/или конечный элемент по которому итерироваться. Результат (название страны+ссылка wikipedia) записываются в файл [countries.txt](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/countries.txt). Создание экземпляра итератор и само итерирование  - в файле [main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/main.py) 
+  1. Там же, в [main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/main.py) реализована функция-генератор hash_generator(file_path)
