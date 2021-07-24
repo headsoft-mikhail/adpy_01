@@ -14,3 +14,28 @@
   1. Файлы, относящиеся к заданию по итераторам и генераторам [здесь](https://github.com/headsoft-mikhail/adpy_01/tree/main/iterators_generators)
   1. Класс итератора реализован в файле [iterator.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/iterator.py). При создании экземпляра можно указать (а можно не указывать) начальный и/или конечный элемент по которому итерироваться. Результат (название страны+ссылка wikipedia) записываются в файл [countries.txt](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/countries.txt). Создание экземпляра итератор и само итерирование  - в файле [main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/main.py) 
   1. Там же, в [main.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/iterators_generators/main.py) реализована функция-генератор hash_generator(file_path)
+
+## Решение [домашнего задания](https://github.com/netology-code/py-homeworks-advanced/tree/master/4.Tests) к лекции «Tests»
+  Файлы, относящиеся к заданию по тестированию [здесь](https://github.com/headsoft-mikhail/adpy_01/tree/main/testing)
+  ###  Проверка приложения secretary
+   За основу приложения secretary был взят предложенный файл [app.py](https://github.com/netology-code/py-homeworks-advanced/blob/master/4.Tests/src/app.py).  
+   В моем проекте он называется [secretary.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/testing/secretary.py).  
+   Файл с тестами - [testing_secretary.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/testing/testing_secretary.py). 
+  * remove_doc_from_shelf - если существует возможность нахождения одного документа в нескольких папках, то удалится первая найденная запись, а вторая останется
+  * delete_doc - если пользователь попытается удалить несуществующий документ, функция вернет не кортеж doc_number, deleted_state, а None, что вызовет ошибку, или потребует проверки if not None. Правильнее было бы возвращать кортеж doc_number, False
+  * get_doc_shelf
+    -  выводит название полки если документ не существует, хотя есть отметка о размещении его в директории, При этом нужно определить, как должен вести себя данный метод: в идеале - исправлять это, т.е. удалять эту отметку, либо выводить сообщение об обнаруженном несоответствии, либо если работать "в лоб" (что наверное неправильно) то все-таки выводить номер полки
+    - если документ может находиться сразу в нескольких директориях, а в текущей реализации append_doc_to_shelf позволяет это, то метод get_doc_shelf должен возвращать все директории в виде списка или множества, а не только первую найденную
+  * append_doc_to_shelf
+    - несоответствие происходит при добавлении документа в директорию, если он уже находился в какой-то директории наверное, предполагается что документ не может находиться сразу в нескольких директориях данный метод используется в программе только внутри других методов, что исключает эту ошибку при выполнении кода (там выполняются проверки), но при расширении функционала программы эта ошибка может помешать корректной работе
+    - предыдущий кейс относится также и если пользователь добавляет документ в директорию, в которой он и так находится, запись о нахождении документа в директории продублируется
+  * move_doc_to_shelf - несуществующий документ может перемещается в директорию
+  * add_new_doc - нет возможности создать документ, не помещая его в определенную директорию
+  ###  Проверка создания папки на Яндекс.Диске
+  1. Фрагмент курсовой работы, где выполнялось копирование файлов на яндекс диск - [ya.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/testing/ya.py)
+  2. файл с тестами - [testing_ya.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/testing/testing_ya.py)
+  3. Токен должен находиться в файле tokens.py: YANDEX_TOKEN
+  ###  Тест авторизации в Яндекс.Паспорте
+  1. Файл с тестами - [testing_yandex_passport_login.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/testing/testing_yandex_passport_login.py)
+  2. Правильный пароль и логин должны находиться в файле tokens.py: PASSPORT_LOGIN, PASSPORT_PASSWORD
+  3. При правильном вводе пароля, требуется ввод кода из смс от Яндекс или последних 4 цифр звонящего абонента. Для прохождения проверки - сделан ввод этих данных через input.
