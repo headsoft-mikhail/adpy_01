@@ -61,7 +61,7 @@ def passport_login(login, password):
         return driver, None
 
 
-class TestYaDisk(unittest.TestCase):
+class TestYandexPassportLogin(unittest.TestCase):
     def setUp(self):
         print('setUp')
 
