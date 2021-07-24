@@ -5,7 +5,7 @@ import ya
 
 YA_DISK = ya.YandexDisk(tokens.YANDEX_TOKEN, "")
 
-class TestSecretary(unittest.TestCase):
+class TestYandexDisk(unittest.TestCase):
     def setUp(self):
         print('setUp')
 
