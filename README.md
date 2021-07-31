@@ -42,7 +42,7 @@
 
 ## Решение [домашнего задания](https://github.com/netology-code/py-homeworks-advanced/tree/master/7.Interview) к лекции «Подготовка к собеседованию»
   1. Все файлы, относящиеся к заданию "подготовка к собеседованию" [здесь](https://github.com/headsoft-mikhail/adpy_01/tree/main/interview)
-  1. Класс Stack, содержащий все указанные в задании мемтоды реализован в [stack.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/stack.py)
+  1. Класс Stack, содержащий все указанные в задании методы реализован в [stack.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/stack.py)
   1. Решение задачи со скобками - [check_balance.py](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/check_balance.py)
   1. Также были написаны тесты для методов класса Stack [(здесь)](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/test_stack.py) и check_balance [(здесь)](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/test_check_balance.py)
   1. [Решение](https://github.com/headsoft-mikhail/adpy_01/blob/main/interview/code_refactoring.py) задания с рефакторингом кода. При создании экземпляра класса для работы с почтой настройки протоколов SMTP и IMAP используются по умолчанию (те, которые были захардкожены в исходном коде). Изменить их можно, вызовом методов set_imap и set_smtp. При вызове receive_message есть возможность выбрать другую папку кроме inbox и задать фильтр-фразу для поиска в тексте письма (header)
